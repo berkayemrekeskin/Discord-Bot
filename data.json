@@ -1,0 +1,35 @@
+{
+    "kaldmu": [
+      {
+        "id": 1,
+        "name": "Goko",
+        "age": 22,
+        "major": "Electronics Engineering"
+      },
+      {
+        "id": 2,
+        "name": "Razmo",
+        "age": 21,
+        "major": "Mathematics"
+      },
+      {
+        "id": 3,
+        "name": "Beko",
+        "age": 21,
+        "major": "Civil Engineering"
+      },
+      {
+        "id": 4,
+        "name": "Berkatov",
+        "age": 22,
+        "major": "Computer Engineering"
+      },
+      {
+        "id": 5,
+        "name": "Ani",
+        "age": 21,
+        "major": "Molecular Biology and Genetics"
+      }
+    ]
+  }
+  
