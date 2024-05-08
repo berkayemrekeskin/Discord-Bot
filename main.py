@@ -30,16 +30,23 @@ async def send_message(message: Message, user_message: str) -> None:
         user_message = user_message[1:]
         
     elif is_command := user_message[0] == '!':
-        try:
-            response: str = get_response(user_message, data)
-            await message.author.send(response) if is_private else await message.channel.send(response)
-        except Exception as e:
-            print(e)
+        user_message = user_message[1:]
+    
+    msg_list = user_message.split(" ")
+    
+    try:
+        response: str = get_response(msg_list, data)
+        if is_private:
+            await message.author.send(response)
+        elif is_command:
+            await message.channel.send(response)
+    except Exception as e:
+        print(e)
 
 # Handling startup
 @client.event
 async def on_ready() -> None:
-    print(f'{client.user} calismaya basladi')
+    print(f'{client.user} started running!')
     
 # Handling income messages
 @client.event
