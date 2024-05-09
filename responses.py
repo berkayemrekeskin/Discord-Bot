@@ -3,7 +3,6 @@ from sort_algorithms import *
 
 def get_response(user_input: list , data: list):
     lowered_list = []
-    i = 0
     for input in user_input:
         lowered_list.append(input.lower())
     
@@ -19,3 +18,12 @@ def get_response(user_input: list , data: list):
                     return selection_sort(array)
                 case "bubble":
                     return bubble_sort(array)
+                case "insertion":
+                    return insertion_sort(array)
+                case "shell": # not correct atm
+                    return shell_sort(array)
+                case "merge": # not correct atm
+                    return merge_sort(array)
+                case "heap": # not correct atm
+                    return heap_sort(array)
+                
